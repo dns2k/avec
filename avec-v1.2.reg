@@ -1,0 +1,115 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\*\shell\AV Encoder]
+"subcommands"=""
+"Icon"="\"C:\\Windows\\avec\\icons\\avc.ico\""
+
+[HKEY_CLASSES_ROOT\*\shell\AV Encoder\Shell]
+
+[HKEY_CLASSES_ROOT\*\shell\AV Encoder\Shell\cmd0P1]
+"Icon"="\"C:\\Windows\\avec\\icons\\play.ico\""
+@="Play"
+
+[HKEY_CLASSES_ROOT\*\shell\AV Encoder\Shell\cmd0P1\command]
+@="\"C:\\Windows\\avec\\ffplay\" -autoexit -i \"%1\""
+
+[HKEY_CLASSES_ROOT\*\shell\AV Encoder\Shell\cmd1G0]
+"CommandFlags"=dword:00000008
+
+[HKEY_CLASSES_ROOT\*\shell\AV Encoder\Shell\cmd1G1]
+"Icon"="\"C:\\Windows\\avec\\icons\\gif.ico\""
+@="Convert to GIF"
+
+[HKEY_CLASSES_ROOT\*\shell\AV Encoder\Shell\cmd1G1\command]
+@="\"C:\\Windows\\avec\\ffmpeg.exe\" -i \"%1\" \"%1\".gif"
+
+[HKEY_CLASSES_ROOT\*\shell\AV Encoder\Shell\cmd2V0]
+"CommandFlags"=dword:00000008
+
+[HKEY_CLASSES_ROOT\*\shell\AV Encoder\Shell\cmd2V1]
+"Icon"="\"C:\\Windows\\avec\\icons\\mp4.ico\""
+@="Convert to MP4 (AVC)"
+
+[HKEY_CLASSES_ROOT\*\shell\AV Encoder\Shell\cmd2V1\command]
+@="\"C:\\Windows\\avec\\ffmpeg.exe\" -i \"%1\" -vcodec libx264 -q 0 -movflags faststart -strict experimental \"%1\"-AVC.mp4"
+
+[HKEY_CLASSES_ROOT\*\shell\AV Encoder\Shell\cmd2V2]
+"Icon"="\"C:\\Windows\\avec\\icons\\mp4.ico\""
+@="Convert to MP4 (HEVC)"
+
+[HKEY_CLASSES_ROOT\*\shell\AV Encoder\Shell\cmd2V2\command]
+@="\"C:\\Windows\\avec\\ffmpeg.exe\" -i \"%1\" -vcodec libx265 -q 0 -movflags faststart -strict experimental \"%1\"-x265-HEVC.mkv"
+
+[HKEY_CLASSES_ROOT\*\shell\AV Encoder\Shell\cmd2V3]
+"Icon"="\"C:\\Windows\\avec\\icons\\mkv.ico\""
+@="Convert to MKV (AVC)"
+
+[HKEY_CLASSES_ROOT\*\shell\AV Encoder\Shell\cmd2V3\command]
+@="\"C:\\Windows\\avec\\ffmpeg.exe\" -i \"%1\" -vcodec libx264 -q 0 -movflags faststart -strict experimental \"%1\"-AVC.mkv"
+
+[HKEY_CLASSES_ROOT\*\shell\AV Encoder\Shell\cmd2V4]
+"Icon"="\"C:\\Windows\\avec\\icons\\mkv.ico\""
+@="Convert to MKV (HEVC)"
+
+[HKEY_CLASSES_ROOT\*\shell\AV Encoder\Shell\cmd2V4\command]
+@="\"C:\\Windows\\avec\\ffmpeg.exe\" -i \"%1\" -vcodec libx265 -q 0 -movflags faststart -strict experimental \"%1\"-HEVC.mkv"
+
+[HKEY_CLASSES_ROOT\*\shell\AV Encoder\Shell\cmd2V5]
+"Icon"="\"C:\\Windows\\avec\\icons\\ogg.ico\""
+@="Convert to OGG Video"
+
+[HKEY_CLASSES_ROOT\*\shell\AV Encoder\Shell\cmd2V5\command]
+@="\"C:\\Windows\\avec\\ffmpeg.exe\" -i \"%1\" -q 5 \"%1\".ogg"
+
+[HKEY_CLASSES_ROOT\*\shell\AV Encoder\Shell\cmd2V6]
+"Icon"="\"C:\\Windows\\avec\\icons\\wmv.ico\""
+@="Convert to WMV"
+
+[HKEY_CLASSES_ROOT\*\shell\AV Encoder\Shell\cmd2V6\command]
+@="\"C:\\Windows\\avec\\ffmpeg.exe\" -i \"%1\" -vcodec wmv2 -q 0 \"%1\".wmv"
+
+[HKEY_CLASSES_ROOT\*\shell\AV Encoder\Shell\cmd3A0]
+"CommandFlags"=dword:00000008
+
+[HKEY_CLASSES_ROOT\*\shell\AV Encoder\Shell\cmd3A1]
+@="Convert to AAC"
+"Icon"="\"C:\\Windows\\avec\\icons\\aac.ico\""
+
+[HKEY_CLASSES_ROOT\*\shell\AV Encoder\Shell\cmd3A1\command]
+@="\"C:\\Windows\\avec\\ffmpeg.exe\" -i \"%1\" \"%1\".aac"
+
+[HKEY_CLASSES_ROOT\*\shell\AV Encoder\Shell\cmd3A2]
+@="Convert to AMR"
+"Icon"="\"C:\\Windows\\avec\\icons\\amr.ico\""
+
+[HKEY_CLASSES_ROOT\*\shell\AV Encoder\Shell\cmd3A2\command]
+@="\"C:\\Windows\\avec\\ffmpeg.exe\" -i \"%1\" -ac 1 -ar 8000 -b:a 12.20k \"%1\".amr"
+
+[HKEY_CLASSES_ROOT\*\shell\AV Encoder\Shell\cmd3A3]
+"Icon"="\"C:\\Windows\\avec\\icons\\mp3.ico\""
+@="Convert to MP3"
+
+[HKEY_CLASSES_ROOT\*\shell\AV Encoder\Shell\cmd3A3\command]
+@="\"C:\\Windows\\avec\\ffmpeg.exe\" -i \"%1\" \"%1\".mp3"
+
+[HKEY_CLASSES_ROOT\*\shell\AV Encoder\Shell\cmd3A4]
+@="Convert to OGG Audio"
+"Icon"="\"C:\\Windows\\avec\\icons\\ogg.ico\""
+
+[HKEY_CLASSES_ROOT\*\shell\AV Encoder\Shell\cmd3A4\command]
+@="\"C:\\Windows\\avec\\ffmpeg.exe\" -i \"%1\" -vn \"%1\".ogg"
+
+[HKEY_CLASSES_ROOT\*\shell\AV Encoder\Shell\cmd3A5]
+@="Convert to WAV"
+"Icon"="\"C:\\Windows\\avec\\icons\\wav.ico\""
+
+[HKEY_CLASSES_ROOT\*\shell\AV Encoder\Shell\cmd3A5\command]
+@="\"C:\\Windows\\avec\\ffmpeg.exe\" -i \"%1\" \"%1\".wav"
+
+[HKEY_CLASSES_ROOT\*\shell\AV Encoder\Shell\cmd3A6]
+@="Convert to WMA"
+"Icon"="\"C:\\Windows\\avec\\icons\\wma.ico\""
+
+[HKEY_CLASSES_ROOT\*\shell\AV Encoder\Shell\cmd3A6\command]
+@="\"C:\\Windows\\avec\\ffmpeg.exe\" -i \"%1\" \"%1\".wma"
+
